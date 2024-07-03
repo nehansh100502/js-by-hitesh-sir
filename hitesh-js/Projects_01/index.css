@@ -1,0 +1,38 @@
+
+.button{
+    height: 60px;
+    width: 60px;
+    border: 2px solid black;
+    padding: 40px;
+    margin-left: 55px;
+    margin-top: 20px;
+    display:inline-block;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+#purple{
+    background-color: blueviolet;
+
+}
+#yellow{
+    background-color: rgb(196, 196, 12);
+}
+#green{
+    background-color: green;
+}
+#pink{
+    background-color: pink;
+}
+#skyblue{
+    background-color: rgb(9, 192, 237);
+}
+#orange{
+    background-color: rgb(242, 89, 18);
+}
+#red{
+    background-color: rgb(237, 9, 28);
+}
+#blue{
+    background-color: rgb(28, 9, 237);
+}
