@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API request</title>
+</head>
+<body>
+    <div class="div">
+    <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem error earum eaque odio dolore cupiditate vitae nam qui. Ab dolor corrupti, at saepe maxime eaque necessitatibus optio cupiditate obcaecati sunt.</h2>
+</div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga velit nobis deserunt cupiditate debitis soluta. Esse labore, voluptas officiis, enim quasi tempora, saepe quam veniam debitis odio cum ab Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sit totam facere asperiores dolorum? Harum facere incidunt voluptate nemo provident aliquid nostrum? Pariatur soluta non dignissimos blanditiis cupiditate fugit quo.</p>
+</body>
+<script>
+        const requestUrl = `https://api.github.com/users/hiteshchoudhary`
+        const xhr = new XMLHttpRequest();
+        xhr.open(`GET`,requestUrl)
+        xhr.onreadystatechange = function(){
+            console.log(xhr.readyState)
+            if(xhr.readyState===4){
+                const data = JSON.parse(this.responseText)
+                console.log(typeof data)
+                console.log(data.followers)
+            }
+        }
+        xhr.send();
+
+
+</script>
+</html>

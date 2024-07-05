@@ -68,3 +68,7 @@ const sports = {
 
 const {score,player:play}=sports
 console.log(score,play)
+
+
+
+// ******************Objects*************************
